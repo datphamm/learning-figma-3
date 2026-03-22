@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-bg: #10375c;
+}
+
+
 html {
     font-size: 62.5%;
 }
@@ -9,6 +14,13 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    ;
 }
 
 .container {
@@ -80,6 +92,15 @@ a {
     gap: 42px;
     justify-content: center;
     align-items: center;
+}
+
+
+.navbar-mobile button {
+    cursor: pointer;
+}
+
+.navbar-mobile #menu {
+    background: pink;
 }
 
 .navbar__link,
@@ -282,7 +303,7 @@ a {
 .work-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    column-gap: 30px;
 }
 
 .work-item {
